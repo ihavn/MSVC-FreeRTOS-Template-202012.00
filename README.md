@@ -5,5 +5,5 @@ A minimalistic FreeRTOS project only for Windows excl. demos etc.
 
 Just clone this project to where you want to start a FreeRTOS project on windows
 
-**Remember to set the solutions platform to x86**
+**Remember to set the solutions platform to 'x86'**
 
