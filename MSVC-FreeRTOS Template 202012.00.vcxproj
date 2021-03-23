@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)\FreeRTOS\Source\portable\MSVC-MingW;$(ProjectDir)\FreeRTOS\Source\include;$(IncludePath)</IncludePath>
+    <IncludePath>D:\Tmp\MSVC-FreeRTOS Template 202012.00\FreeRTOS\Source;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -140,38 +140,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="FreeRTOS\Source\include\atomic.h" />
-    <ClInclude Include="FreeRTOS\Source\include\croutine.h" />
-    <ClInclude Include="FreeRTOS\Source\include\deprecated_definitions.h" />
-    <ClInclude Include="FreeRTOS\Source\include\event_groups.h" />
-    <ClInclude Include="FreeRTOS\Source\include\FreeRTOS.h" />
-    <ClInclude Include="FreeRTOS\Source\include\FreeRTOSConfig.h" />
-    <ClInclude Include="FreeRTOS\Source\include\list.h" />
-    <ClInclude Include="FreeRTOS\Source\include\message_buffer.h" />
-    <ClInclude Include="FreeRTOS\Source\include\mpu_prototypes.h" />
-    <ClInclude Include="FreeRTOS\Source\include\mpu_wrappers.h" />
-    <ClInclude Include="FreeRTOS\Source\include\portable.h" />
-    <ClInclude Include="FreeRTOS\Source\include\projdefs.h" />
-    <ClInclude Include="FreeRTOS\Source\include\queue.h" />
-    <ClInclude Include="FreeRTOS\Source\include\semphr.h" />
-    <ClInclude Include="FreeRTOS\Source\include\StackMacros.h" />
-    <ClInclude Include="FreeRTOS\Source\include\stack_macros.h" />
-    <ClInclude Include="FreeRTOS\Source\include\stream_buffer.h" />
-    <ClInclude Include="FreeRTOS\Source\include\task.h" />
-    <ClInclude Include="FreeRTOS\Source\include\timers.h" />
-    <ClInclude Include="FreeRTOS\Source\portable\MSVC-MingW\portmacro.h" />
+    <ClInclude Include="FreeRTOS\Source\atomic.h" />
+    <ClInclude Include="FreeRTOS\Source\croutine.h" />
+    <ClInclude Include="FreeRTOS\Source\deprecated_definitions.h" />
+    <ClInclude Include="FreeRTOS\Source\event_groups.h" />
+    <ClInclude Include="FreeRTOS\Source\FreeRTOS.h" />
+    <ClInclude Include="FreeRTOS\Source\FreeRTOSConfig.h" />
+    <ClInclude Include="FreeRTOS\Source\list.h" />
+    <ClInclude Include="FreeRTOS\Source\message_buffer.h" />
+    <ClInclude Include="FreeRTOS\Source\mpu_prototypes.h" />
+    <ClInclude Include="FreeRTOS\Source\mpu_wrappers.h" />
+    <ClInclude Include="FreeRTOS\Source\portable.h" />
+    <ClInclude Include="FreeRTOS\Source\portmacro.h" />
+    <ClInclude Include="FreeRTOS\Source\projdefs.h" />
+    <ClInclude Include="FreeRTOS\Source\queue.h" />
+    <ClInclude Include="FreeRTOS\Source\semphr.h" />
+    <ClInclude Include="FreeRTOS\Source\StackMacros.h" />
+    <ClInclude Include="FreeRTOS\Source\stack_macros.h" />
+    <ClInclude Include="FreeRTOS\Source\stream_buffer.h" />
+    <ClInclude Include="FreeRTOS\Source\task.h" />
+    <ClInclude Include="FreeRTOS\Source\timers.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FreeRTOS\Example\main.c" />
     <ClCompile Include="FreeRTOS\Source\croutine.c" />
     <ClCompile Include="FreeRTOS\Source\event_groups.c" />
     <ClCompile Include="FreeRTOS\Source\heap_4.c" />
     <ClCompile Include="FreeRTOS\Source\list.c" />
-    <ClCompile Include="FreeRTOS\Source\portable\MSVC-MingW\port.c" />
+    <ClCompile Include="FreeRTOS\Source\port.c" />
     <ClCompile Include="FreeRTOS\Source\queue.c" />
     <ClCompile Include="FreeRTOS\Source\stream_buffer.c" />
     <ClCompile Include="FreeRTOS\Source\tasks.c" />
     <ClCompile Include="FreeRTOS\Source\timers.c" />
-    <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
